@@ -16,11 +16,16 @@ body{
     align-items: center;
     min-height: 100vh;
     .main-content{
-
+        img{
+            max-width:100%;
+            height:auto;
+        }
         .container{
             background-color: $card-color;
             border-radius: 14px;
             overflow: hidden;
+            max-width: 1000px;
+
             span{
                 color:$accent-color;
             }
@@ -57,7 +62,9 @@ body{
 }
 @media(max-width:990px) {
     
-    
+    .main-content{
+        max-width: 500px;
+    }
    
     .row{
         .col1{
